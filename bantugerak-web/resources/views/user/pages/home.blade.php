@@ -1,5 +1,6 @@
+@extends('user.layout.master')
 
-
+@section('content')
   <!-- ======= hero Section ======= -->
   <section id="hero">
 
@@ -484,3 +485,4 @@
 
   </main><!-- End #main -->
 
+  @endsection

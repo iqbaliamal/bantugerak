@@ -6,18 +6,18 @@
   <title>Ecommerce Dashboard &mdash; Stisla</title>
 
   <!-- General CSS Files -->
-  <link rel="stylesheet" href="{{asset('admin/modules/bootstrap/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/modules/fontawesome/css/all.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/fontawesome/css/all.min.css')}}">
 
   <!-- CSS Libraries -->
-  <link rel="stylesheet" href="{{asset('admin/modules/jqvmap/dist/jqvmap.min.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/modules/summernote/summernote-bs4.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/modules/owlcarousel2/dist/assets/owl.carousel.min.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/modules/owlcarousel2/dist/assets/owl.theme.default.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/jqvmap/dist/jqvmap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/summernote/summernote-bs4.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/owlcarousel2/dist/assets/owl.carousel.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/modules/owlcarousel2/dist/assets/owl.theme.default.min.css')}}">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/css/components.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/css/components.css')}}">
 
     <!-- Custom CSS -->
     @stack('customcss')

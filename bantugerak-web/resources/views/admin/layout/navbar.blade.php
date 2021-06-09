@@ -30,19 +30,19 @@
         </div>
         <div class="search-item">
           <a href="#">
-            <img class="mr-3 rounded" width="30" src="{{asset('admin/img/products/product-3-50.png')}}" alt="product">
+            <img class="mr-3 rounded" width="30" src="{{asset('backend/img/products/product-3-50.png')}}" alt="product">
             oPhone S9 Limited Edition
           </a>
         </div>
         <div class="search-item">
           <a href="#">
-            <img class="mr-3 rounded" width="30" src="{{asset('admin/img/products/product-2-50.png')}}" alt="product">
+            <img class="mr-3 rounded" width="30" src="{{asset('backend/img/products/product-2-50.png')}}" alt="product">
             Drone X2 New Gen-7
           </a>
         </div>
         <div class="search-item">
           <a href="#">
-            <img class="mr-3 rounded" width="30" src="{{asset('admin/img/products/product-1-50.png')}}" alt="product">
+            <img class="mr-3 rounded" width="30" src="{{asset('backend/img/products/product-1-50.png')}}" alt="product">
             Headphone Blitz
           </a>
         </div>
@@ -54,7 +54,7 @@
             <div class="search-icon bg-danger text-white mr-3">
               <i class="fas fa-code"></i>
             </div>
-            Stisla Admin Template
+            Stisla backend Template
           </a>
         </div>
         <div class="search-item">
@@ -129,7 +129,7 @@
       </div>
     </li>
     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-      <img alt="image" src="{{asset('admin/img/avatar/avatar-1.png')}}" class="rounded-circle mr-1">
+      <img alt="image" src="{{asset('backend/img/avatar/avatar-1.png')}}" class="rounded-circle mr-1">
       <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
       <div class="dropdown-menu dropdown-menu-right">
         <div class="dropdown-title">Logged in 5 min ago</div>

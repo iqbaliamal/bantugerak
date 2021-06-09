@@ -10,29 +10,29 @@
 </div>
 
 <!-- General JS Scripts -->
-<script src="{{asset('admin/modules/jquery.min.js')}}"></script>
-<script src="{{asset('admin/modules/popper.js')}}"></script>
-<script src="{{asset('admin/modules/tooltip.js')}}"></script>
-<script src="{{asset('admin/modules/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('admin/modules/nicescroll/jquery.nicescroll.min.js')}}"></script>
-<script src="{{asset('admin/modules/moment.min.js')}}"></script>
-<script src="{{asset('admin/js/stisla.js')}}"></script>
+<script src="{{asset('backend/modules/jquery.min.js')}}"></script>
+<script src="{{asset('backend/modules/popper.js')}}"></script>
+<script src="{{asset('backend/modules/tooltip.js')}}"></script>
+<script src="{{asset('backend/modules/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('backend/modules/nicescroll/jquery.nicescroll.min.js')}}"></script>
+<script src="{{asset('backend/modules/moment.min.js')}}"></script>
+<script src="{{asset('backend/js/stisla.js')}}"></script>
 
 <!-- JS Libraies -->
-<script src="{{asset('admin/modules/jquery.sparkline.min.js')}}"></script>
-<script src="{{asset('admin/modules/chart.min.js')}}"></script>
-<script src="{{asset('admin/modules/owlcarousel2/dist/owl.carousel.min.js')}}"></script>
-<script src="{{asset('admin/modules/summernote/summernote-bs4.js')}}"></script>
-<script src="{{asset('admin/modules/chocolat/dist/js/jquery.chocolat.min.js')}}"></script>
+<script src="{{asset('backend/modules/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('backend/modules/chart.min.js')}}"></script>
+<script src="{{asset('backend/modules/owlcarousel2/dist/owl.carousel.min.js')}}"></script>
+<script src="{{asset('backend/modules/summernote/summernote-bs4.js')}}"></script>
+<script src="{{asset('backend/modules/chocolat/dist/js/jquery.chocolat.min.js')}}"></script>
 
 <!-- Page Specific JS File -->
-<script src="{{asset('admin/js/page/index.js')}}"></script>
+<script src="{{asset('backend/js/page/index.js')}}"></script>
 
   <!-- Custom JS File -->
   @stack('customjs')
 
 <!-- Template JS File -->
-<script src="{{asset('admin/js/scripts.js')}}"></script>
-<script src="{{asset('admin/js/custom.js')}}"></script>
+<script src="{{asset('backend/js/scripts.js')}}"></script>
+<script src="{{asset('backend/js/custom.js')}}"></script>
 </body>
 </html>

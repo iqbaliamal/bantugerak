@@ -5,7 +5,7 @@
 <!-- Main Content -->
 <div class="main-content">
     <section class="section">
-
+        {{-- <h1>{{$title}}</h1> --}}
     </section>
 </div>
 @endsection

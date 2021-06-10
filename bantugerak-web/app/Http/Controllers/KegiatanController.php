@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kegiatan;
 use Illuminate\Http\Request;
 
 class KegiatanController extends Controller
@@ -13,7 +14,10 @@ class KegiatanController extends Controller
      */
     public function index()
     {
-        //
+        // return view('admin.pages.kegiatan.index');
+        $data = Kegiatan::All();
+
+        return view('admin.pages.kegiatan.index', compact('data'));
     }
 
     /**
@@ -23,7 +27,7 @@ class KegiatanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.kegiatan.create');
     }
 
     /**
@@ -34,7 +38,31 @@ class KegiatanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validasi form
+        $this->validate($request, [
+            'nama_kegiatan' => 'required',
+            'foto_kegiatan' => 'required',
+            'deskripsi_kegiatan' => 'required',
+            'tanggal_kegiatan' => 'required',
+        ]);
+
+        //store kegiatan
+        $kegiatan = new Kegiatan();
+        $kegiatan->nama_kegiatan = $request->nama_kegiatan;
+        $kegiatan->deskripsi_kegiatan = $request->deskripsi_kegiatan;
+        $kegiatan->tanggal_kegiatan = $request->tanggal_kegiatan;
+
+        $imagePath = "";
+        if ($request->hasFile('foto_kegiatan')) {
+            $image = $request->foto_kegiatan;
+            $imageName = time() . $image->getClientOriginalName();
+            $image->move('backend/img/kegiatan/', $imageName);
+            $imagePath = 'backend/img/kegiatan/' . $imageName;
+        }
+        $kegiatan->foto_kegiatan = $imagePath;
+
+        $kegiatan->save();
+        return redirect()->route('list.kegiatan');
     }
 
     /**
@@ -56,7 +84,9 @@ class KegiatanController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Kegiatan::find($id);
+        if (!$data) return view('error-404');
+        return view('admin.pages.kegiatan.update');
     }
 
     /**
@@ -79,6 +109,11 @@ class KegiatanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $kegiatan = Kegiatan::where('id', $id)->first();
+        if (file_exists($kegiatan->foto_kegiatan)) {
+            unlink($kegiatan->kegiatan);
+        }
+        $kegiatan->delete();
+        return redirect()->route('list.kegiatan');
     }
 }

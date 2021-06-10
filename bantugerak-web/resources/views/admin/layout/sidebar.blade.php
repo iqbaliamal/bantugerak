@@ -30,7 +30,7 @@
 
         <li class="menu-header">Kegiatan</li>
         <li class="{{ request()->is('admin/kegiatan') ? 'active' : '' }}">
-          <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Kegiatan</span></a>
+          <a href="{{route('list.kegiatan')}}" class="nav-link"><i class="fas fa-fire"></i><span>Kegiatan</span></a>
         </li>
 
       <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
